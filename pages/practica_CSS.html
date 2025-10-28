@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head> <!-- Cabecera-->
+	<!-- Pagina principal de las practicas -->
+	<!-- ===== Metadatos ===== -->
+	<meta charset="utf-8"> <!-- la escritura de caracteres especiales (',ñ) -->
+	<meta name="description" content="practicas-- html,css,js"> <!-- describe el contenido de la pagina -->
+	<meta name="keywords" content="HTML, CSS, JavaScript"> <!-- palabras claves -->
+	<meta name="author" content="Camila_Moran"> <!-- Indica quien creo la pagina -->
+	<meta http-equiv="refresh" content="10"> <!-- Refrescar la pagina cada 10s -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ver en diferente dispositivos (adaptar) -->
+	
+	<!-- ===== Titulo e icono ===== -->
+	<title>Practicas CSS</title>
+	
+	<link href="https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Bitcount+Grid+Single:wght@100..900&family=Story+Script&display=swap" rel="stylesheet">
+	
+	<link rel="icon" href="../img/Eevee.ico" type="image/x-icon">
+	<!-- No es necesario aplicar el reset siempre -->
+	<!--<link rel="stylesheet" href="../Css/style_reset.css">-->
+	<!--Con esta hoja de estilo se resetea el formato del browser/navegador-->
+
+	
+	<link rel="stylesheet" href="../Css/style.css">
+	
+	
+</head>
+<body class="story-script-regular"> <!-- Cuerpo -->
+	<hr>
+	<!-- ===== Barra de navegación ===== -->
+	<header>
+		<nav>
+				<a href="..\index.html">Inicio</a> |   
+				<a href="https://sites.google.com/fiec.espol.edu.ec/camila-moran-chipantiza/inicio">Práctica de Builder (Google Site)</a> | 
+				<a href="..\pages\practica_lista.html">Práctica de Listas</a> | 
+				<a href="..\Ia\practica_ia.html">Práctica de Inteligencia Artificial</a> | 
+				<a href="..\pages\practica_texto.html">Práctica de Texto</a> | 
+				<a href="..\pages\practica_imagenes.html">Práctica de Imágenes</a> | 
+				<a href="..\pages\practica_audio.html">Práctica de Audio</a> | 
+				<a href="..\pages\practica_video.html">Práctica de Video</a> | 
+				<a href="..\pages\practica_formulario.html">Práctica de Formulario</a> | 
+				<a href="..\pages\practica_controles.html">Práctica de Controles</a> | 
+				<a href="..\CopyPaste\practica_plantilla.html">Práctica de CopyPaste</a> | 
+				<a href="..\pages\practica_JavaScript.html">Práctica de JavaScript</a> | 
+				<a href="..\pages\practica_tablas.html">Práctica de Tablas</a> |  
+				<a href="https://camila-moran.my.canva.site/">Práctica de Builder (Canva)</a> | 
+				<a href="..\pages\practica_formulario2.html">Práctica de Formulario 2</a> | 
+				<a href="..\pages\practica_menuHorizontal.html">Práctica de Menú Horizontal</a> | 
+				<a href="..\pages\practica_menuVertical.html">Práctica de Menú Vertical</a> | 
+				<a href="..\pages\practica_Crazy.html">Práctica de Crazy</a>  <!-- ===== Diseño interactivo Propio "Loco" ===== -->   
+		</nav>
+	</header>
+	<hr>
+	<!-- ===== Práctica de etiquetas de CSS ===== -->
+	<main>
+		<h1 class="Titulo">Práctica de CSS</h1>	
+		
+		<span>
+			Css nos ayuda/sirve para dar estilo y diseño a nuestra Pagina Web. <br>
+			Para aplicarlo tenemos tres opciones: <br>
+		</span>
+		
+		<div class="comportamiento">
+			<p class="caja">
+				1. En linea Código embebido<br>
+				style="color:red">Linea de estilo con Código embebido<br>
+			</p>
+			
+			<p class="caja">
+				2.-Códig Interno Código en la cabecera<br>
+				El código debe ir en la cabecera del fila<br>
+				<!-- Debemos explicar los selectores -->
+				style<br>
+					p{<br>
+						background:blue; <br>
+					}<br>
+				style<br>
+			</p>
+			
+			<p class="caja">
+				3.-Externo File.css<br>
+				link rel="stylesheet" href="estilo.cc"	
+			</p>	
+		</div>
+		
+		<div class="comportamiento">
+			<p class="caja">
+				Modelo cajas #1:<br>
+				Todo elemento HTML se presenta en pantalla se debe de tratar como una caja
+			</p>
+			<p class="caja">
+				Modelo cajas #2:<br>
+				Todo elemento HTML se presenta en pantalla se debe de tratar como una caja
+			</p>
+		</div>
+		
+		
+		<section class="Resalta">
+			<article>
+				<h4>
+				Notas:
+				</h4>
+				<p>
+					1.-Siempre se ejecuta de arriba hacia abajo, es decir la misma etiqueta la puede escribir 
+					dos veces y esta presentara en pantalla eñ ultimo edecto programador
+				</p>
+				<p>
+					2.-Tener cuidado con montar las etiquetas en el diseño, 
+				</p>
+				
+				<p>
+					3.- Valide resetear antes de aplicar su diseño: Dependiendo de su diseño
+				</p>
+			</article>
+		</section>
+		<br>
+
+		<span>
+			<h3>Hipervínculo</h3>
+			<hr>
+			<h4>Hipervínculos: Abrir en nueva pestaña</h4>
+			<p>
+				Atributo target="_blank": Este atributo se utiliza para especificar cómo se debe abrir el hipervínculo. 
+				Puede ser_blank,_self_parent, o cualquier nombre diferente que no sea de los cuatro mencionados, que se 
+				considera_blank para abrir en una nueva pestaña o ventana.
+				<a href="..\pages\practica_video.html" target="_blank">Abrir en nueva pestaña</a>
+			</p>
+			<br>
+			<h4>Hipervínculos: Abrirmos en la misma pestaña</h4>
+			<p>
+				Los hipervinculos permiten a los usuarios navegar entre diferentes páginas web de manera sencilla. 
+				Sin embargo, no todos los navegadores permiten abrir enlaces en la misma pestaña. Para aquellos que 
+				desean mantener la navegación dentro de su sitio web o evitar que los usuarios se distraigan con otras 
+				páginas externas, es posible utilizar HTML y la propiedad target del elemento de ancla para abrir un 
+				enlace en la misma pestaña. Esto se logra estableciendo el valor _self> para el atributo «target>> del enlace.
+				<a href="..\pages\practica_video.html" target="_self">Abrir en la misma pestaña</a>
+			</p>
+			<br>
+			<h4>Hipervínculos: Abrir en nueva pestaña, modo seguro</h4>
+			<p>
+				Atributo rel="noopener noreferrer": Este es el uso combinado de los atributos noopener y noreferrer, que se 
+				utilizan para mejorar la seguridad y la privacidad al abrir hipervínculos.
+				Al usar estos atributos, se puede garantizar que los hipervínculos se abran en una nueva pestaña o ventana, 
+				proporcionando una experiencia de navegación más segura y responsable.
+				<a href="..\pages\practica_video.html" target="_blank" rel="noopener noreferrer">Abrir en nueva pestaña (Modo seguro)</a>
+			</p>
+			<br>
+		</span>
+		<hr>
+		
+		<h2>Botones con estilo</h2>
+		<h6>Evento over</h6>
+		
+		<!-- Selector #1 -->
+		<button>Presioname #1</button>
+		
+		<!-- Selector #2 -->
+		<button class="Btn">Presioname #2</button>
+		
+	</main>
+	<!-- ===== Pie de página ===== -->
+	<hr>
+	<footer>
+		<p>Desarrollado por: Camila Morán</p>
+		<p>
+			<a href="mailto:caalmora@espol.edu.ec">Correo</a> | 
+			<a href="tel:+5930969124972">Celular</a>
+		</p>
+		<p> © 2025 - Página de practicas académicas | Espol</p>
+		
+	</footer>
+	<hr>
+</body>	
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head> <!-- Cabecera-->
+	<!-- Pagina principal de las practicas -->
+	<!-- ===== Metadatos ===== -->
+	<meta charset="utf-8"> <!-- la escritura de caracteres especiales (',ñ) -->
+	<meta name="description" content="practicas-- html,css,js"> <!-- describe el contenido de la pagina -->
+	<meta name="keywords" content="HTML, CSS, JavaScript"> <!-- palabras claves -->
+	<meta name="author" content="Camila_Moran"> <!-- Indica quien creo la pagina -->
+	<meta http-equiv="refresh" content="10"> <!-- Refrescar la pagina cada 10s -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ver en diferente dispositivos (adaptar) -->
+	
+	<!-- ===== Titulo e icono ===== -->
+	<title>Practicas Tablas</title>
+	<link rel="icon" href="../img/Kabuto.ico" type="image/x-icon">
+</head>
+<body> <!-- Cuerpo -->
+	<hr>
+	<!-- ===== Barra de navegación ===== -->
+	<nav>
+			<a href="..\index.html">Inicio</a> |   
+			<a href="https://sites.google.com/fiec.espol.edu.ec/camila-moran-chipantiza/inicio">Práctica de Builder (Google Site)</a> | 
+			<a href="..\pages\practica_lista.html">Práctica de Listas</a> | 
+			<a href="..\Ia\practica_ia.html">Práctica de Inteligencia Artificial</a> | 
+			<a href="..\pages\practica_texto.html">Práctica de Texto</a> | 
+			<a href="..\pages\practica_imagenes.html">Práctica de Imágenes</a> | 
+			<a href="..\pages\practica_audio.html">Práctica de Audio</a> | 
+			<a href="..\pages\practica_video.html">Práctica de Video</a> | 
+			<a href="..\pages\practica_formulario.html">Práctica de Formulario</a> | 
+			<a href="..\pages\practica_CSS.html">Práctica de CSS</a> | 
+			<a href="..\CopyPaste\practica_plantilla.html">Práctica de CopyPaste</a> | 
+			<a href="..\pages\practica_JavaScript.html">Práctica de JavaScript</a> | 
+			<a href="..\pages\practica_controles.html">Práctica de Controles</a> |  
+			<a href="https://camila-moran.my.canva.site/">Práctica de Builder (Canva)</a> | 
+			<a href="..\pages\practica_formulario2.html">Práctica de Formulario 2</a> | 
+			<a href="..\pages\practica_menuHorizontal.html">Práctica de Menú Horizontal</a> | 
+			<a href="..\pages\practica_menuVertical.html">Práctica de Menú Vertical</a> | 
+			<a href="..\pages\practica_Crazy.html">Práctica de Crazy</a>  <!-- ===== Diseño interactivo Propio "Loco" ===== -->   
+	</nav>
+	<hr>
+	<!-- ===== Práctica de etiquetas de Tabla ===== -->
+	<main>
+		<h1>Práctica de Tabla</h1>	
+		<h3>Horario de Clases</h3>
+		<!-- Etiquetas de Tablas
+			<table> Tabla - Contenedor principal de la Tabla
+			<thead> Cabecera de la tabla: Agrupar/presentar los títulos de las columnas de mi Tabla
+			<th> Presenta el valor del titulo de la cabecera de la tabla (negrita/cursiva/centrada)
+			<td> Datos de la tabla, presenta en pantallla el valor que se requiere
+			<tbody> Agrupa el cuerpo/contenido de la tabla
+			<tr> Agrupa las celdas que pertenecen a la misma fila/row
+			<tfoot> pie de la Tabla
+			
+				Nota: Debe de controlar el ancho de la tabla
+		-->
+			<table border="1" cellpadding="8" cellspacing="0" aling="center" width="80%">
+				<thead>
+					<tr bgcolor="#3333333" style="color:white; text-align:center">
+						<th>Hora</th>
+						<th>Lunes</th>
+						<th>Martes</th>
+						<th>Miércoles</th>
+						<th>Jueves</th>
+						<th>Viernes</th>
+					</tr>
+				</thead>
+				
+				<tbody>
+				
+					<tr> <!-- Fila 1 -->
+						<td bgcolor="#D6D4D4" style="color:black; text-align:center">7:00 - 9:00</td><!-- Hora -->
+						<td bgcolor="#ADD8E6" style="color:black; text-align:center" colspan="2">Desarrollo Web</td><!-- Lunes --> <!-- Unificación de dos columnas -->
+						<td bgcolor="#90EE90" style="color:black; text-align:center">Circuito</td><!-- Miércoles -->
+						<td bgcolor="#FFEFD5" style="color:black; text-align:center">Matemática</td><!-- Jueves -->
+						<td bgcolor="#FAF887" style="color:black; text-align:center" rowspan="2">Integral II</td><!-- Viernes --> <!-- Unificación de dos filas -->
+					</tr>
+					
+					<tr> <!-- Fila 2 -->
+						<td bgcolor="#D6D4D4" style="color:black; text-align:center">9:00 - 11:00</td><!-- Hora -->
+						<td bgcolor="#90EE90" style="color:black; text-align:center" rowspan="2">Circuito</td><!-- Lunes -->
+						<td bgcolor="#FAF887" style="color:black; text-align:center">Integral II</td><!-- Martes -->
+						<td bgcolor="#F1CEF5" style="color:black; text-align:center">IA - Práctica</td><!-- Miércoles -->
+						<td bgcolor="#BFFFF5" style="color:black; text-align:center">Fundamento de Programación</td><!-- Jueves -->
+						
+					</tr>
+					
+					<tr> <!-- Fila 3 -->
+						<td bgcolor="#D6D4D4" style="color:black; text-align:center">11:00 - 13:00</td><!-- Hora -->
+						<td bgcolor="#FFEFD5" style="color:black; text-align:center">Matemática</td><!-- Martes -->
+						<td bgcolor="#ADD8E6" style="color:black; text-align:center">Desarrollo Web</td><!-- Miércoles -->
+						<td bgcolor="#F1CEF5" style="color:black; text-align:center" colspan="2">IA - Práctica</td><!-- Jueves -->
+					</tr>
+					
+					<tr> <!-- Fila 4 -->
+						<td bgcolor="#D6D4D4" style="color:black; text-align:center">13:00 - 14:00</td><!-- Hora -->
+						<td bgcolor="#F2B95E" style="color:black; text-align:center" colspan="5">Almuerzo</td><!-- Dias --> <!-- Unificación de todas las columnas -->
+					</tr>
+					
+					<tr> <!-- Fila 5 -->
+						<td bgcolor="#D6D4D4" style="color:black; text-align:center">14:00 - 15:00</td><!-- Hora -->
+						<td bgcolor="#FAF887" style="color:black; text-align:center">Integral II</td><!-- Lunes -->
+						<td bgcolor="#90EE90" style="color:black; text-align:center">Circuito</td><!-- Martes -->
+						<td bgcolor="#BFFFF5" style="color:black; text-align:center">Fundamento de Programación</td><!-- Miércoles -->
+						<td bgcolor="#ADD8E6" style="color:black; text-align:center" colspan="2">Desarrollo Web</td><!-- Jueves -->
+					</tr>
+					
+					<tr> <!-- Fila 6 -->
+						<td bgcolor="#D6D4D4" style="color:black; text-align:center">15:00 - 16:00</td><!-- Hora -->
+						<td bgcolor="#F1CEF5" style="color:black; text-align:center">IA - Práctica</td><!-- Lunes -->
+						<td bgcolor="#BFFFF5" style="color:black; text-align:center" rowspan="2">Fundamento de Programación</td><!-- Martes -->
+						<td bgcolor="#FFEFD5" style="color:black; text-align:center">Matemática</td><!-- Miércoles -->
+						<td bgcolor="#90EE90" style="color:black; text-align:center">Circuito</td><!-- Jueves -->
+						<td bgcolor="#FFEFD5" style="color:black; text-align:center">Matemática</td><!-- Viernes -->
+					</tr>
+					
+					<tr> <!-- Fila 7 -->
+						<td bgcolor="#D6D4D4" style="color:black; text-align:center">16:00 - 17:00</td><!-- Hora -->
+						<td bgcolor="#FFEFD5" style="color:black; text-align:center">Matemática</td><!-- Lunes -->
+						<td bgcolor="#FAF887" style="color:black; text-align:center" colspan="2">Integral II</td><!-- Miércoles -->
+						<td bgcolor="#BFFFF5" style="color:black; text-align:center">Fundamento de Programación</td><!-- Viernes -->
+					</tr>
+	
+				</tbody>
+				
+				<!-- <tfoot>  (pie de pagina )
+					<tr>
+						<td>7:00 - 9:00</td>
+						<td>Desarrollo Web</td>
+						<td>Desarrollo Web</td>
+						<td>IA - Práctica</td>
+						<td>Circuito</td>
+						<td>Matemática</td>
+					</tr>
+				</tfoot> -->
+				
+		</table>
+		
+	</main>
+	<!-- ===== Pie de página ===== -->
+	<hr>
+	<footer>
+		<p>Desarrollado por: Camila Morán</p>
+		<p>
+			<a href="mailto:caalmora@espol.edu.ec">Correo</a> | 
+			<a href="tel:+5930969124972">Celular</a>
+		</p>
+		<p> © 2025 - Página de practicas académicas | Espol</p>
+		
+	</footer>
+	<hr>
+</body>	
+</html>

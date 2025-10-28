@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="../img/Pinsir.ico" type="image/x-icon">
+  <title>Cursos de Programación — Aprende a Crear Software</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Meta description -->
+  <meta name="description" content="Plataforma de cursos para aprender a programar: desde fundamentos hasta proyectos prácticos.">
+
+  <style>
+    /* Menu de prácticas siempre arriba */
+    .nav-practicas {
+      position: sticky;
+      top: 0;
+      background-color: #f8f8f8;
+      padding: 10px 0;
+      text-align: center;
+      z-index: 1000;
+      border-bottom: 1px solid #ddd;
+      font-size: 14px;
+    }
+
+    .nav-practicas a {
+      text-decoration: none;
+      color: #333;
+      margin: 0 5px;
+    }
+
+    .nav-practicas a:hover {
+      color: #007BFF;
+    }
+
+    /* Responsive: si la pantalla es pequeña, se separan en líneas */
+    @media (max-width: 768px) {
+      .nav-practicas {
+        font-size: 12px;
+      }
+      .nav-practicas a {
+        display: block;
+        margin: 5px 0;
+      }
+    }
+
+    /* Opcional: separar el resto del contenido del menú fijo */
+    main {
+      padding-top: 60px; /* Ajusta según el tamaño del menú */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menú principal de prácticas (siempre arriba) -->
+  <nav class="nav-practicas">
+    <a href="..\index.html">Inicio</a> |   
+    <a href="https://sites.google.com/fiec.espol.edu.ec/camila-moran-chipantiza/inicio">Práctica de Builder (Google Site)</a> | 
+    <a href="..\pages\practica_lista.html">Práctica de Listas</a> |  
+    <a href="..\pages\practica_texto.html">Práctica de Texto</a> | 
+    <a href="..\pages\practica_imagenes.html">Práctica de Imágenes</a> | 
+    <a href="..\pages\practica_video.html">Práctica de Video</a> | 
+    <a href="..\pages\practica_CSS.html">Práctica de CSS</a> | 
+    <a href="..\pages\practica_formulario.html">Práctica de Formulario</a> | 
+    <a href="..\pages\practica_controles.html">Práctica de Controles</a> | 
+    <a href="..\CopyPaste\practica_plantilla.html">Práctica de CopyPaste</a> | 
+    <a href="..\pages\practica_menuVertical.html">Práctica de Menú Vertical</a> | 
+    <a href="..\pages\practica_tablas.html">Práctica de Tablas</a> |  
+    <a href="https://camila-moran.my.canva.site/">Práctica de Builder (Canva)</a> | 
+    <a href="..\pages\practica_formulario2.html">Práctica de Formulario 2</a> | 
+    <a href="..\pages\practica_audio.html">Práctica de Audio</a> | 
+    <a href="..\pages\practica_menuHorizontal.html">Práctica de Menú Horizontal</a> | 
+    <a href="..\pages\practica_Crazy.html">Práctica de Crazy</a>  
+  </nav>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="brand">CodeLaunch</h1>
+      <nav class="nav">
+        <a href="#cursos">Cursos</a>
+        <a href="#metodo">Método</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <button id="themeToggle" class="btn-outline">Cambiar fondo</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h2>Aprende a programar construyendo proyectos reales</h2>
+          <p>Rutas de aprendizaje para principiantes y avanzados: Python, JavaScript, desarrollo web y más.</p>
+          <div class="cta-row">
+            <a class="btn-primary" href="#cursos">Ver cursos</a>
+            <a class="btn-ghost" href="#metodo">Cómo funciona</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <ul class="quick-list">
+            <li><strong>120+</strong> horas de contenido</li>
+            <li><strong>Proyectos</strong> reales</li>
+            <li><strong>Mentoría</strong> y feedback</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cursos -->
+    <section id="cursos" class="section">
+      <div class="container">
+        <h3 class="section-title">Nuestros cursos</h3>
+        <p class="section-sub">Rutas diseñadas para que llegues a construir aplicaciones reales.</p>
+
+        <div class="courses-grid">
+          <article class="card">
+            <h4>Introducción a la Programación</h4>
+            <p>Conceptos básicos, lógica y tu primer proyecto en Python.</p>
+            <a class="card-btn" href="#">Inscribirme</a>
+          </article>
+
+          <article class="card">
+            <h4>Desarrollo Web con JavaScript</h4>
+            <p>HTML, CSS y JavaScript moderno para crear aplicaciones interactivas.</p>
+            <a class="card-btn" href="#">Inscribirme</a>
+          </article>
+
+          <article class="card">
+            <h4>APIs y Back-end</h4>
+            <p>Construye y conecta APIs usando Node.js y bases de datos.</p>
+            <a class="card-btn" href="#">Inscribirme</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Método -->
+    <section id="metodo" class="section alt">
+      <div class="container">
+        <h3 class="section-title">Nuestro método</h3>
+        <div class="method-grid">
+          <div class="method">
+            <h5>Teoría corta</h5>
+            <p>Explicaciones concisas y prácticas.</p>
+          </div>
+          <div class="method">
+            <h5>Muchos ejercicios</h5>
+            <p>Practica hasta dominarlo.</p>
+          </div>
+          <div class="method">
+            <h5>Proyecto final</h5>
+            <p>Construye un portafolio profesional.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonios" class="section">
+      <div class="container">
+        <h3 class="section-title">Testimonios</h3>
+        <div class="testimonials">
+          <blockquote class="testimonial">
+            "Gracias a este curso logré mi primer trabajo como desarrollador junior."
+            <cite>— Ana M.</cite>
+          </blockquote>
+          <blockquote class="testimonial">
+            "Proyectos reales y feedback útil. Recomiendo 100%."
+            <cite>— Luis G.</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contacto" class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> CodeLaunch — Aprender a programar</p>
+      <div class="social">
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="js/script.js"></script>
+</body>
+</html>

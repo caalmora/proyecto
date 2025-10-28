@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head> <!-- Cabecera-->
+	<!-- Pagina principal de las practicas -->
+	<!-- ===== Metadatos ===== -->
+	<meta charset="utf-8"> <!-- la escritura de caracteres especiales (',ñ) -->
+	<meta name="description" content="practicas-- html,css,js"> <!-- describe el contenido de la pagina -->
+	<meta name="keywords" content="HTML, CSS, JavaScript"> <!-- palabras claves -->
+	<meta name="author" content="Camila_Moran"> <!-- Indica quien creo la pagina -->
+	<meta http-equiv="refresh" content="300"> <!-- Refrescar la pagina cada 10s -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ver en diferente dispositivos (adaptar) -->
+	<meta > <!--  -->
+	
+	<!-- ===== Titulo e icono ===== -->
+	<title>Practicas Imágenes</title>
+	<link rel="icon" href="../img/Tauros.ico" type="image/x-icon">
+</head>
+<body> <!-- Cuerpo -->
+	<hr>
+	<!-- ===== Barra de navegación ===== -->
+	<nav>
+			<a href="..\index.html">Inicio</a> |   
+			<a href="https://sites.google.com/fiec.espol.edu.ec/camila-moran-chipantiza/inicio">Práctica de Builder (Google Site)</a> | 
+			<a href="https://camila-moran.my.canva.site/">Práctica de Builder (Canva)</a> | 
+			<a href="..\Ia\practica_ia.html">Práctica de Inteligencia Artificial</a> | 
+			<a href="..\pages\practica_texto.html">Práctica de Texto</a> | 
+			<a href="..\pages\practica_lista.html">Práctica de Listas</a> | 
+			<a href="..\pages\practica_audio.html">Práctica de Audio</a> | 
+			<a href="..\pages\practica_video.html">Práctica de Video</a> | 
+			<a href="..\pages\practica_tablas.html">Práctica de Tablas</a> | 
+			<a href="..\pages\practica_CSS.html">Práctica de CSS</a> | 
+			<a href="..\CopyPaste\practica_plantilla.html">Práctica de CopyPaste</a> | 
+			<a href="..\pages\practica_JavaScript.html">Práctica de JavaScript</a> | 
+			<a href="..\pages\practica_controles.html">Práctica de Controles</a> |  
+			<a href="..\pages\practica_formulario.html">Práctica de Formulario</a> | 
+			<a href="..\pages\practica_formulario2.html">Práctica de Formulario 2</a> | 
+			<a href="..\pages\practica_menuHorizontal.html">Práctica de Menú Horizontal</a> | 
+			<a href="..\pages\practica_menuVertical.html">Práctica de Menú Vertical</a> | 
+			<a href="..\pages\practica_Crazy.html">Práctica de Crazy</a>  <!-- ===== Diseño interactivo Propio "Loco" ===== -->   
+	</nav>
+	<hr>
+	<!-- ===== Práctica de etiquetas de Imagen ===== -->
+	<main>
+		<h1>Práctica de Imágenes </h1>
+		<!-- ===== Frame para importar una página externa dentro de mi sitio web ===== -->
+		<iframe 
+		title="página eexterna"
+		width="300" 
+		height="300" 
+		src="https://vago.com/"
+		style="border: 1px solid">
+		</iframe>
+		<!-- ===== Frame con video de YouTube ===== -->
+		<iframe 
+			width="300" 
+			height="300" 
+			src="https://www.youtube.com/embed/swzuCdzUfYg?si=IGlxdDzZBjX8i13d" 
+			title="YouTube video player" 
+			frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+			referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+		</iframe>
+		<hr>
+		<!-- ===== Etiquetas de Imagenes ===== -->
+
+		<!-- Se debe de usar alt dentro de la etiqueta img para describir en palabras la imagen -->
+		<!-- Esta descripción ayuda a: el SEO, Tener texto descriptivo que se usará en el 
+		momento en que la imagen no pueda ser cargada
+		Por procesos de accesibilidad a no videntes-->
+		<h3>Etiqueta IMG (básica - Imagen local)</h3>
+		<img 
+			src="../img/i1.png"
+			width="300px"
+			height="300px"
+			alt="Un gato negro tejiendo"
+		>
+		<hr>
+		
+		<h3>Etiqueta IMG (Medio - Imagen externa)</h3>
+		<img 
+			src="https://gratisography.com/wp-content/uploads/2025/01/gratisography-dog-vacation-800x525.jpg"
+			width="300px"
+			height="300px"
+			alt="Un perro con gafas"
+		>
+		<hr>
+		<!-- ===== Mapeo de Imagenes ===== -->
+		<img
+			src="../img/i2.png"
+			alt="Red de computadoras"
+			usemap="#NubeComputadora"
+		>
+		<map name="NubeComputadora">
+			<area
+				shape="poly"
+				alt="PC"
+				coords="149,19,212,33,183,74,136,49,142,34,144,28"
+				href="..\pages\nube\PC.html"
+			>
+		
+		<!-- ===== Mapeo de Imagenes (Tarea) ===== -->
+		<!-- ===== link: https://www.image-map.net/ ===== -->
+			
+			<area
+				shape="poly"
+				alt="Servidor"
+				coords="274,4,325,25,319,71,301,85,248,62,255,13"
+				href="..\pages\nube\Servidor.html"
+			>
+			
+			<area
+				shape="poly"
+				alt="Computadora de escritorio"
+				coords="335,98,369,112,370,135,352,153,318,134,332,119"
+				href="..\pages\nube\Computadora_Escritorio.html"
+			>
+			
+			<area
+				shape="poly"
+				alt="Teléfono inteligente(Antigua Generación)"
+				coords="325,176,352,192,323,223,297,206"
+				href="..\pages\nube\TIA.html"
+			>
+			
+			<area
+				shape="poly"
+				alt="Computadora portátil"
+				coords="201,210,232,232,228,259,207,279,173,253,195,240"
+				href="..\pages\nube\Computadora_P.html"
+			>
+			
+			<area
+				shape="poly"
+				alt="Teléfono inteligente (Nueva Generación)"
+				coords="58,196,79,215,31,247,10,226"
+				href="..\pages\nube\TIN.html"
+			>
+			
+			<area
+				shape="poly"
+				alt="Modems"
+				coords="10,101,38,89,46,95,54,122,26,137,17,132"
+				href="..\pages\nube\Modems.html"
+			>
+			
+			<area
+				shape="poly"
+				alt="Switch"
+				coords="61,64,90,50,113,67,83,82"
+				href="..\pages\nube\Switch.html"
+			>
+				
+		</map>
+		<hr>
+		
+		<!-- ===== Imagen  Reponsive ===== -->
+		<!-- El diseño responivo: pagina y contenido (Solo imágenes en esta práctica)-->
+		<!-- 1. Tener 4 imagenes -->
+		<!-- 2. Nombrar cada imagen según el tamáño que va a utilizar -->
+		<!-- 3. Redimencionar la imagen según el valor condicionado (Exito) -->
+		
+		<h3>Imagen responsiva (Adaptable según las dimensiones de la pantalla) </h3>
+			<picture>
+				<source media="(min-width:650px)" srcset="..\img\i-650.png">
+				<source media="(min-width:450px)" srcset="..\img\i-450.png">
+				<source media="(min-width:300px)" srcset="..\img\i-300.png">
+				<source media="(min-width:100px)" srcset="..\img\i-100.png">
+				<img src="..\img\i-all.png">
+			</picture>
+		
+	</main>
+	
+	<!-- ===== Pie de página ===== -->
+	<hr>
+	<footer>
+		<p>Desarrollado por: Camila Morán</p>
+		<p>
+			<a href="mailto:caalmora@espol.edu.ec">Correo</a> | 
+			<a href="tel:+5930969124972">Celular</a>
+		</p>
+		<p> © 2025 - Página de practicas académicas | Espol</p>
+		
+	</footer>
+	<hr>
+</body>	
+</html>
